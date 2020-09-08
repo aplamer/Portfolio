@@ -45,7 +45,10 @@ class App extends Component{
                 </div>
                 
                 <ArtBanner/>
-                <Contacts />
+                <div className = "home">
+                    <h2 className = "homeText" style = {{textDecoration : "underline"}}>Contacts</h2>
+                    <Contacts />
+                </div>
             </div>
         )
     }

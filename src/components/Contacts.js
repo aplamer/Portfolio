@@ -5,9 +5,9 @@ const Contact = props =>{
         const {link, image} = props.socialprofile;
 
         return (
-            <div style={{display: 'inline-block', width:80, margin:10}}>
+            <div className = "contacts">
                 <a href={link}>
-                    <img src = {image} alt = 'profile' style = {{width: 50, height: 50}}/>
+                    <img src = {image} className = "contactImage"/>
                 </a>
             </div>
         )
@@ -15,15 +15,12 @@ const Contact = props =>{
 }
 
 const Contacts = () =>(
-        <div>
-            <h3>Contacts</h3>
-            <div>
+        <div style ={{textAlign:"center"}}>
                 {
                     CONTACTS.map(CONTACT => (
                         <Contact key={CONTACT.id} socialprofile={CONTACT} />
                     ))
                 }
-            </div>
         </div>
     )
 

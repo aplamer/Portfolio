@@ -158,7 +158,7 @@
 
 .displayDescription{
     text-align: center;
-    white-space: nowrap;
+    overflow: hidden;
     color: white;
     padding-top: 10px;
 }
@@ -212,3 +212,16 @@
         opacity: 0;
     }
 } */
+
+.contacts {
+
+    display: inline-block; 
+    width: 80px;
+    margin:10px;
+
+}
+
+.contactImage{
+    height: 50px;
+    width: 50px;
+}
