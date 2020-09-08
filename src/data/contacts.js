@@ -10,7 +10,7 @@ const CONTACTS = [
     },
     {
         id:2,
-        link: 'https://github.com/ALPELA',
+        link: 'https://github.com/aplamer',
         image: githubIcon
     },
     {

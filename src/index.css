@@ -160,9 +160,13 @@
     text-align: center;
     overflow: hidden;
     color: white;
-    padding-top: 10px;
 }
 
+.displayTech{
+    text-align: center;
+    overflow: hidden;
+    color: white;
+}
 .slideabler{
     animation-duration: .5s;
     animation-name: slideright;

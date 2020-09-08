@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
 import PROJECTS from "../data/projects";
 const Project = props => {
-    const {title, image, description, technologies} = props.projects;
+    const {title, image, description} = props.projects;
 
     return (
         <div>
             <h1 className = "displayName">{title}</h1>
             <img className = "displayImage" src={image} alt = 'profile'/>
             <p className = "displayDescription">{description}</p>
-            <div className = "displayTech">{technologies}</div>
         </div>
     )
     
