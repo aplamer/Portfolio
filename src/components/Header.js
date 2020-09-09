@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Header = ({children}) => {
     return(
-        <div>
+        <div className = "headerBackground">
             <div id = "header">
                 <h4 className = "headerh4"><Link className = "headerLink" to='/'>Home</Link></h4>
                 <h4 className = "headerh4"><Link className = "headerLink" to='/about'>About</Link></h4>
@@ -13,6 +13,7 @@ const Header = ({children}) => {
                 <h4 className = "headerh4"><Link className = "headerLink" to='/contacts'>Contacts</Link></h4>
             </div>
             {children}
+
         </div>
         
     )

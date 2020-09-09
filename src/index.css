@@ -15,6 +15,13 @@
     color: #dedee3;
 }
 
+.headerBackground{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    background: black;
+    z-index: -2;
+}
 /* For Home Banner */
 #profile{
     float:left;
@@ -24,16 +31,30 @@
     height:200px;
     border-radius: 100px;
 }
+@media screen and (min-width: 950px){
+    #name{
+        font-family: 'Yanone Kaffeesatz', sans-serif;
+        margin: auto;
+        white-space: nowrap;
+        overflow: hidden;
+        padding-left: 30px;
+        padding-top: 10px;
+        font-size: 200px;
+        color:rgb(255, 255, 255);
+    }
+}
 
-#name{
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-    margin: auto;
-    white-space: nowrap;
-    overflow: hidden;
-    padding-left: 30px;
-    padding-top: 10px;
-    font-size: 200px;
-    color:rgb(255, 255, 255);
+@media screen and (max-width: 950px){
+    #name{
+        font-family: 'Yanone Kaffeesatz', sans-serif;
+        margin: auto;
+        white-space: normal;
+        overflow: hidden;
+        padding-left: 30px;
+        padding-top: 10px;
+        font-size: 100px;
+        color:rgb(255, 255, 255);
+    }
 }
 @media screen and (min-width: 1000px){
     #banner{
@@ -82,6 +103,7 @@
 }
 
 .home h2{
+    font-family: 'Playfair Display', serif;
     color: #dedee3;
     text-align: center;
 }
@@ -139,10 +161,11 @@
     padding-top: 10px;
 }
 
-@media screen and (min-width: 1000px){
+@media screen and (min-width: 1300px){
     .displayImage{
         height:600px;
         white-space: nowrap;
+        overflow: hidden;
         position: relative;
         
     }
@@ -151,12 +174,13 @@
 @media screen and (max-width: 1300px){
     .displayImage{
         height:250px;
-        display:relative;
+        overflow: hidden;
+        position: relative;
         
     }
 }
 
-@media screen and (min-width: 1000px){
+@media screen and (min-width: 1600px){
     .displayDescription{
         text-align: center;
         white-space: nowrap;

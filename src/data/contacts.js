@@ -5,17 +5,17 @@ import linkedinIcon from '../assets/linkedin_icon.png';
 const CONTACTS = [
     {
         id:1,
-        link: 'aplamer11307@gmail.com',
+        link: "mailto:aplamer11307@gmail.com",
         image: emailIcon
     },
     {
         id:2,
-        link: 'https://github.com/aplamer',
+        link: "https://github.com/aplamer",
         image: githubIcon
     },
     {
         id:3,
-        link: 'https://www.linkedin.com/in/alan-lam-b1349a186/',
+        link: "https://www.linkedin.com/in/alan-lam-b1349a186/",
         image: linkedinIcon
     }
 ];

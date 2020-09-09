@@ -14,9 +14,9 @@ ReactDOM.render(
     <Router history = {createBrowserHistory()}>
         <Switch>
             <Route exact path = '/'  render ={() => <Header><App /></Header>}/>
+            <Route path = '/contacts' render ={() => <Header><Contacts /></Header>}/>
             {/* <Route path = '/about' render ={() => <Header><About /></Header>}/>
             <Route path = '/education'  render ={() => <Header><Education /></Header>}/>
-            <Route path = '/contacts' render ={() => <Header><Contacts /></Header>}/>
             <Route path = '/projects' render ={() => <Header><Projects /></Header>}/> */}
         </Switch>
     </Router>, 

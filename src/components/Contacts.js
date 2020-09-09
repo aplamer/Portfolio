@@ -15,7 +15,8 @@ const Contact = props =>{
 }
 
 const Contacts = () =>(
-        <div style ={{textAlign:"center"}}>
+        <div className = "home" style ={{textAlign:"center"}}>
+            <h2 className = "homeText" style = {{textDecoration : "underline"}}>Contacts</h2>
                 {
                     CONTACTS.map(CONTACT => (
                         <Contact key={CONTACT.id} socialprofile={CONTACT} />

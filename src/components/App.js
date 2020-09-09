@@ -13,7 +13,7 @@ class App extends Component{
                     <p className = "homeText">
                         Hi there, my name is Alan Peter Lam. I'm a computer scientist born and raised in New York City.
                         <br></br>
-                        Though I have many interests such art, writing, and videogame design, my goals right now lie solely on making a career in web developement.
+                        Though I have many interests such as art, writing, and videogame design, my goals right now lie solely on making a career in web developement.
                         <br></br>
                         I'm motivated, passionate and am open to learning new things in order to further my career.
                         <br></br>
@@ -45,10 +45,7 @@ class App extends Component{
                 </div>
                 
                 <ArtBanner/>
-                <div className = "home">
-                    <h2 className = "homeText" style = {{textDecoration : "underline"}}>Contacts</h2>
-                    <Contacts />
-                </div>
+                <Contacts />
             </div>
         )
     }
