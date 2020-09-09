@@ -24,22 +24,22 @@ class ProjectBanner extends Component{
     scrollLeft(){
         if (this.state.ID == 0){
             document.getElementsByClassName("displayButtonLeft")[1].disabled = true;
-            document.getElementById("portraitPortrait").classList.add("slideablelout")
+            document.getElementById("projectPortrait").classList.add("slideablelout")
             setTimeout(() => {
-                document.getElementById("portraitPortrait").classList.remove("slideablelout")
-                document.getElementById("portraitPortrait").classList.remove("slideabler")
+                document.getElementById("projectPortrait").classList.remove("slideablelout")
+                document.getElementById("projectPortrait").classList.remove("slideabler")
                 this.setState({ID: 4})
-                document.getElementById("portraitPortrait").classList.add("slideablel")
+                document.getElementById("projectPortrait").classList.add("slideablel")
                 },400);
         }
         else{
             document.getElementsByClassName("displayButtonLeft")[1].disabled = true;
-            document.getElementById("portraitPortrait").classList.add("slideablelout")
+            document.getElementById("projectPortrait").classList.add("slideablelout")
             setTimeout(() => {
-                document.getElementById("portraitPortrait").classList.remove("slideablelout")
-                document.getElementById("portraitPortrait").classList.remove("slideabler")
+                document.getElementById("projectPortrait").classList.remove("slideablelout")
+                document.getElementById("projectPortrait").classList.remove("slideabler")
                 this.setState({ID: this.state.ID-1})
-                document.getElementById("portraitPortrait").classList.add("slideablel")
+                document.getElementById("projectPortrait").classList.add("slideablel")
                 },400);
         }
         setTimeout(() => {
@@ -50,22 +50,22 @@ class ProjectBanner extends Component{
     scrollRight(){
         if (this.state.ID == 4){
             document.getElementsByClassName("displayButtonRight")[1].disabled = true;
-            document.getElementById("portraitPortrait").classList.add("slideablerout")
+            document.getElementById("projectPortrait").classList.add("slideablerout")
             setTimeout(() => {
-                document.getElementById("portraitPortrait").classList.remove("slideablerout")
-                document.getElementById("portraitPortrait").classList.remove("slideablel")
+                document.getElementById("projectPortrait").classList.remove("slideablerout")
+                document.getElementById("projectPortrait").classList.remove("slideablel")
                 this.setState({ID: 0})
-                document.getElementById("portraitPortrait").classList.add("slideabler")
+                document.getElementById("projectPortrait").classList.add("slideabler")
                 },400);
         }
         else{
             document.getElementsByClassName("displayButtonRight")[1].disabled = true;
-            document.getElementById("portraitPortrait").classList.add("slideablerout")
+            document.getElementById("projectPortrait").classList.add("slideablerout")
             setTimeout(() => {
-                document.getElementById("portraitPortrait").classList.remove("slideablerout")
-                document.getElementById("portraitPortrait").classList.remove("slideablel")
+                document.getElementById("projectPortrait").classList.remove("slideablerout")
+                document.getElementById("projectPortrait").classList.remove("slideablel")
                 this.setState({ID: this.state.ID+1})
-                document.getElementById("portraitPortrait").classList.add("slideabler")
+                document.getElementById("projectPortrait").classList.add("slideabler")
                 },400);
         }
         setTimeout(() => {

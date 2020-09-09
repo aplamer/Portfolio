@@ -1,4 +1,4 @@
-import project1 from "../assets/Artificer.png"
+import project1 from "../assets/Portfolio.PNG"
 const PROJECTS = [
     {
         id: 1,
