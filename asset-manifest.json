@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.dc68cc5b.chunk.css",
+    "main.js": "/Portfolio/static/js/main.9e3b8d55.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.9e3b8d55.chunk.js.map",
+    "runtime-main.js": "/Portfolio/static/js/runtime-main.e440ee5a.js",
+    "runtime-main.js.map": "/Portfolio/static/js/runtime-main.e440ee5a.js.map",
+    "static/js/2.659bde8a.chunk.js": "/Portfolio/static/js/2.659bde8a.chunk.js",
+    "static/js/2.659bde8a.chunk.js.map": "/Portfolio/static/js/2.659bde8a.chunk.js.map",
+    "index.html": "/Portfolio/index.html",
+    "precache-manifest.f0e4100ed945f18c785c48caf67cf15d.js": "/Portfolio/precache-manifest.f0e4100ed945f18c785c48caf67cf15d.js",
+    "service-worker.js": "/Portfolio/service-worker.js",
+    "static/css/main.dc68cc5b.chunk.css.map": "/Portfolio/static/css/main.dc68cc5b.chunk.css.map",
+    "static/js/2.659bde8a.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.659bde8a.chunk.js.LICENSE.txt",
+    "static/media/Angular.png": "/Portfolio/static/media/Angular.226b86c0.png",
+    "static/media/Artificer.png": "/Portfolio/static/media/Artificer.12676444.png",
+    "static/media/Background+buttons.png": "/Portfolio/static/media/Background+buttons.31495eaf.png",
+    "static/media/FrontEnd.png": "/Portfolio/static/media/FrontEnd.fa8c91eb.png",
+    "static/media/Knight.png": "/Portfolio/static/media/Knight.1372040f.png",
+    "static/media/Portfolio.PNG": "/Portfolio/static/media/Portfolio.a4564c1d.PNG",
+    "static/media/Propaganda.png": "/Portfolio/static/media/Propaganda.455c722c.png",
+    "static/media/React.png": "/Portfolio/static/media/React.864eca6e.png",
+    "static/media/Rebel.png": "/Portfolio/static/media/Rebel.9fb3c34c.png",
+    "static/media/collegeImage.png": "/Portfolio/static/media/collegeImage.09967467.png",
+    "static/media/github_icon.png": "/Portfolio/static/media/github_icon.be308b34.png",
+    "static/media/linkedin_icon.png": "/Portfolio/static/media/linkedin_icon.d32c258b.png",
+    "static/media/nyc.png": "/Portfolio/static/media/nyc.8c461d9e.png",
+    "static/media/profile.png": "/Portfolio/static/media/profile.19401f8c.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e440ee5a.js",
+    "static/js/2.659bde8a.chunk.js",
+    "static/css/main.dc68cc5b.chunk.css",
+    "static/js/main.9e3b8d55.chunk.js"
+  ]
+}
