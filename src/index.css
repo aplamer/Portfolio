@@ -174,7 +174,7 @@
 
 @media screen and (max-width: 1300px){
     .displayImage{
-        height:250px;
+        height: 200px;
         overflow: hidden;
         position: relative;
         
