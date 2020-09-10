@@ -1,13 +1,9 @@
-import React, {Component} from "react";
-import Banner from "./Banner";
+import React from "react";
 import ProjectBanner from "./ProjectBanner";
 import ArtBanner from "./ArtBanner";
 import Contacts from "./Contacts";
-class App extends Component{
-    render(){
-        return(
+const App = () =>(
             <div>
-                <Banner />
                 <div className = "home">
                     <h2>Who am I?</h2>
                     <p className = "homeText">
@@ -47,8 +43,7 @@ class App extends Component{
                 <ArtBanner/>
                 <Contacts />
             </div>
-        )
-    }
-}
+    
+)
 
 export default App;

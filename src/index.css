@@ -22,6 +22,7 @@
     background: black;
     z-index: -2;
 }
+
 /* For Home Banner */
 #profile{
     float:left;
@@ -250,6 +251,7 @@
     }
 } */
 
+/* For contact footer and page */
 .contacts {
 
     display: inline-block; 
@@ -261,4 +263,26 @@
 .contactImage{
     height: 50px;
     width: 50px;
+}
+
+/* Education Page */
+
+#collegeImage{
+    position: absolute;
+    display: inline-block;
+    height: 300px;
+    margin-left: 100px;
+}
+
+.collegeText{
+    position: relative;
+    overflow: hidden;
+    display:inline-block;
+    text-align: initial;
+    padding: 5px;
+    margin-left: 950px;
+}
+
+.onlineClassImg{
+    height:168px;
 }
