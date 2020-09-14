@@ -1,5 +1,6 @@
 import React from "react";
 import collegeImage from "../assets/collegeImage.png";
+import collegeImage2 from "../assets/collegeImage2.png";
 import OFFLINECLASSES from "../data/classes";
 import ONLINECLASSES from "../data/onlineclasses";
 import SKILLS from "../data/skills";
@@ -42,7 +43,7 @@ const Education = () => (
 
             <div id = "collegeImageContainer">
             <img className = "collegeImage" src = {collegeImage}/>
-            <img className = "collegeImage" src = {collegeImage}/>
+            <img className = "collegeImage" src = {collegeImage2}/>
             </div>
 
             <div className="homeText collegeText">
