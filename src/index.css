@@ -267,22 +267,53 @@
 
 /* Education Page */
 
-#collegeImage{
-    position: absolute;
-    display: inline-block;
-    height: 300px;
-    margin-left: 100px;
+@media screen and (min-width: 1200px){
+    #collegeImageContainer{
+        text-align: center;
+        width: 50%;
+        float: left;
+    }
+
+    
+    .collegeImage{
+        padding: 20px;
+        height:300px;
+    }
+
+    .collegeText{
+        display: inline-block;
+        width: 50%;
+    }
 }
 
-.collegeText{
-    position: relative;
-    overflow: hidden;
+
+@media screen and (max-width: 1200px){
+    #collegeImageContainer{
+        text-align: center;
+        width: 50%;
+    }
+        
+    .collegeImage{
+        padding: 20px;
+        height:200px;
+    }
+
+    .collegeText{
+        display: inline-block;
+        width: 50%;
+    }
+}
+
+
+
+.educationOther{
+    text-align : center; 
+    color: white;
     display:inline-block;
-    text-align: initial;
-    padding: 5px;
-    margin-left: 950px;
+    padding-right: 50px;
 }
 
-.onlineClassImg{
-    height:168px;
+.leftTitle{
+    float: left;
+    margin-left: 10px;
 }
