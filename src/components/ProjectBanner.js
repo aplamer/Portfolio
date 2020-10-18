@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import PROJECTS from "../data/projects";
-import Link from "react-router-dom/Link";
 const Project = props => {
     const {title, image, description, link} = props.projects;
 
@@ -10,7 +9,7 @@ const Project = props => {
             <img className = "displayImage" src={image} alt = 'profile'/>
             <p className = "displayDescription">{description}
             <br></br>
-            <Link to = "{link}">{link}</Link>
+            <a href = {link}>{link}</a>
             </p>
         </div>
     )
