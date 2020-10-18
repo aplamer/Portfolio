@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
 import PROJECTS from "../data/projects";
 const Project = props => {
-    const {title, image, description} = props.projects;
+    const {title, image, description, link} = props.projects;
 
     return (
         <div>
             <h1 className = "displayName">{title}</h1>
             <img className = "displayImage" src={image} alt = 'profile'/>
-            <p className = "displayDescription">{description}</p>
+            <p className = "displayDescription">{description}
+            <br></br>
+            <a href = "{link}">{link}</a>
+            </p>
         </div>
     )
     
@@ -28,7 +31,7 @@ class ProjectBanner extends Component{
             setTimeout(() => {
                 document.getElementById("projectPortrait").classList.remove("slideablelout")
                 document.getElementById("projectPortrait").classList.remove("slideabler")
-                this.setState({ID: 4})
+                this.setState({ID: 1})
                 document.getElementById("projectPortrait").classList.add("slideablel")
                 },400);
         }
@@ -48,7 +51,7 @@ class ProjectBanner extends Component{
     }
 
     scrollRight(){
-        if (this.state.ID == 4){
+        if (this.state.ID == 1){
             document.getElementsByClassName("displayButtonRight")[1].disabled = true;
             document.getElementById("projectPortrait").classList.add("slideablerout")
             setTimeout(() => {
