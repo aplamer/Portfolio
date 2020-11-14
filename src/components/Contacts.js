@@ -7,7 +7,7 @@ const Contact = props =>{
         return (
             <div className = "contacts">
                 <a href={link}>
-                    <img src = {image} className = "contactImage"/>
+                    <img alt = '' src = {image} className = "contactImage"/>
                 </a>
             </div>
         )

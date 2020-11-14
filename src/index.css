@@ -202,45 +202,45 @@
     }
 }
 
-.slideabler{
+.slideableRIn{
     animation-duration: .5s;
-    animation-name: slideright;
+    animation-name: slideRightIn;
 }
 
-.slideablel{
+.slideableLIn{
     animation-duration: .5s;
-    animation-name: slideleft;
+    animation-name: slideLeftIn;
 }
 
-.slideablelout{
+.slideableLOut{
     animation-duration: .5s;
-    animation-name: slideleftout;
+    animation-name: slideLeftOut;
 }
 
-.slideablerout{
+.slideableROut{
     animation-duration: .5s;
-    animation-name: sliderightout;
+    animation-name: slideRightOut;
 }
 
-@keyframes slideleft{
+@keyframes slideLeftIn{
     from{
         margin-left: -200%;
     }
 }
 
-@keyframes slideright{
+@keyframes slideRightIn{
     from{
         margin-left: 200%;
     }
 }
 
-@keyframes sliderightout{
+@keyframes slideRightOut{
     to{
         margin-left: -200%;
     }
 }
 
-@keyframes slideleftout{
+@keyframes slideLeftOut{
     to{
         margin-left: 200%;
     }

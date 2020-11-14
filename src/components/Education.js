@@ -20,7 +20,7 @@ const OnlineClass = props =>{
     return (
         <div className = "educationOther">
             <h5>{title}</h5>
-            <a href = {link}><img src = {image} style = {{height: "160px"}}/></a>
+            <a href = {link}><img alt = '' src = {image} style = {{height: "160px"}}/></a>
         </div>
     )
 }
@@ -31,7 +31,7 @@ const Skill = props =>{
     return (
         <div className = "educationOther">
             <h5>{title}</h5>
-            <img src = {image} style = {{height: "120px"}}/>
+            <img alt = '' src = {image} style = {{height: "120px"}}/>
         </div>
     )
 }
@@ -42,8 +42,8 @@ const Education = () => (
             <h2>College Education</h2>
 
             <div id = "collegeImageContainer">
-            <img className = "collegeImage" src = {collegeImage}/>
-            <img className = "collegeImage" src = {collegeImage2}/>
+            <img className = "collegeImage" alt = '' src = {collegeImage}/>
+            <img className = "collegeImage" alt = '' src = {collegeImage2}/>
             </div>
 
             <div className="homeText collegeText">

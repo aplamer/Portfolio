@@ -13,6 +13,7 @@ const Art = props => {
     
 }
 
+
 class ArtBanner extends Component{
 
     constructor(){
@@ -22,56 +23,49 @@ class ArtBanner extends Component{
         this.scrollRight = this.scrollRight.bind(this);
     }
 
-    scrollLeft(){
-        if (this.state.artID == 0){
-            document.getElementsByClassName("displayButtonLeft")[1].disabled = true;
-            document.getElementById("portrait").classList.add("slideablelout")
-            setTimeout(() => {
-                document.getElementById("portrait").classList.remove("slideablelout")
-                document.getElementById("portrait").classList.remove("slideabler")
-                this.setState({artID: 4})
-                document.getElementById("portrait").classList.add("slideablel")
-                },400);
+    slideTo(direction, ID){
+        var targetedButton;
+        var slideOut;
+        var clearClass;
+        var slideIn;
+        if(direction === "left"){
+            targetedButton = "displayButtonLeft";
+            slideOut = "slideableLOut";
+            clearClass = "slideableRIn";
+            slideIn= "slideableLIn";
         }
         else{
-            document.getElementsByClassName("displayButtonLeft")[1].disabled = true;
-            document.getElementById("portrait").classList.add("slideablelout")
-            setTimeout(() => {
-                document.getElementById("portrait").classList.remove("slideablelout")
-                document.getElementById("portrait").classList.remove("slideabler")
-                this.setState({artID: this.state.artID-1})
-                document.getElementById("portrait").classList.add("slideablel")
-                },400);
+            targetedButton = "displayButtonRight";
+            slideOut = "slideableROut";
+            clearClass = "slideableLIn";
+            slideIn = "slideableRIn";
         }
+    
+        document.getElementsByClassName(targetedButton)[1].disabled = true;
+            document.getElementById("portrait").classList.add(slideOut);
+            setTimeout(() => {
+                document.getElementById("portrait").classList.remove(slideOut);
+                document.getElementById("portrait").classList.remove(clearClass);
+                if(direction === "left"){
+                    ID === 0 ? this.setState({artID: 4}) : this.setState({artID: this.state.artID-1});
+                }
+                else{
+                    ID === 4 ? this.setState({artID: 0}) : this.setState({artID: this.state.artID+1});
+                }
+                document.getElementById("portrait").classList.add(slideIn);
+                },400);
+    
         setTimeout(() => {
-            document.getElementsByClassName("displayButtonLeft")[1].disabled = false;
+            document.getElementsByClassName(targetedButton)[1].disabled = false;
             },700);
     }
 
+    scrollLeft(){
+        this.slideTo("left", this.state.artID);
+    }
+
     scrollRight(){
-        if (this.state.artID == 4){
-            document.getElementsByClassName("displayButtonRight")[1].disabled = true;
-            document.getElementById("portrait").classList.add("slideablerout")
-            setTimeout(() => {
-                document.getElementById("portrait").classList.remove("slideablerout")
-                document.getElementById("portrait").classList.remove("slideablel")
-                this.setState({artID: 0})
-                document.getElementById("portrait").classList.add("slideabler")
-                },400);
-        }
-        else{
-            document.getElementsByClassName("displayButtonRight")[1].disabled = true;
-            document.getElementById("portrait").classList.add("slideablerout")
-            setTimeout(() => {
-                document.getElementById("portrait").classList.remove("slideablerout")
-                document.getElementById("portrait").classList.remove("slideablel")
-                this.setState({artID: this.state.artID+1})
-                document.getElementById("portrait").classList.add("slideabler")
-                },400);
-        }
-        setTimeout(() => {
-        document.getElementsByClassName("displayButtonRight")[1].disabled = false;
-        },700);
+        this.slideTo("right", this.state.artID);
     }
 
     render(){

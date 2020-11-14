@@ -19,61 +19,54 @@ const Project = props => {
 class ProjectBanner extends Component{
     constructor(){
         super();
-        this.state = {ID: 0};
+        this.state = {projectID: 0};
         this.scrollLeft = this.scrollLeft.bind(this);
         this.scrollRight = this.scrollRight.bind(this);
     }
 
-    scrollLeft(){
-        if (this.state.ID == 0){
-            document.getElementsByClassName("displayButtonLeft")[1].disabled = true;
-            document.getElementById("projectPortrait").classList.add("slideablelout")
-            setTimeout(() => {
-                document.getElementById("projectPortrait").classList.remove("slideablelout")
-                document.getElementById("projectPortrait").classList.remove("slideabler")
-                this.setState({ID: 1})
-                document.getElementById("projectPortrait").classList.add("slideablel")
-                },400);
+    slideTo(direction, ID){
+        var targetedButton;
+        var slideOut;
+        var clearClass;
+        var slideIn;
+        if(direction === "left"){
+            targetedButton = "displayButtonLeft";
+            slideOut = "slideableLOut";
+            clearClass = "slideableRIn";
+            slideIn= "slideableLIn";
         }
         else{
-            document.getElementsByClassName("displayButtonLeft")[1].disabled = true;
-            document.getElementById("projectPortrait").classList.add("slideablelout")
-            setTimeout(() => {
-                document.getElementById("projectPortrait").classList.remove("slideablelout")
-                document.getElementById("projectPortrait").classList.remove("slideabler")
-                this.setState({ID: this.state.ID-1})
-                document.getElementById("projectPortrait").classList.add("slideablel")
-                },400);
+            targetedButton = "displayButtonRight";
+            slideOut = "slideableROut";
+            clearClass = "slideableLIn";
+            slideIn = "slideableRIn";
         }
+    
+        document.getElementsByClassName(targetedButton)[1].disabled = true;
+            document.getElementById("projectPortrait").classList.add(slideOut);
+            setTimeout(() => {
+                document.getElementById("projectPortrait").classList.remove(slideOut);
+                document.getElementById("projectPortrait").classList.remove(clearClass);
+                if(direction === "left"){
+                    ID === 0 ? this.setState({projectID: 1}) : this.setState({projectID: this.state.projectID-1});
+                }
+                else{
+                    ID === 1 ? this.setState({projectID: 0}) : this.setState({projectID: this.state.projectID+1});
+                }
+                document.getElementById("projectPortrait").classList.add(slideIn);
+                },400);
+    
         setTimeout(() => {
-            document.getElementsByClassName("displayButtonLeft")[1].disabled = false;
+            document.getElementsByClassName(targetedButton)[1].disabled = false;
             },700);
     }
 
+    scrollLeft(){
+        this.slideTo("left", this.state.projectID)
+    }
+
     scrollRight(){
-        if (this.state.ID == 1){
-            document.getElementsByClassName("displayButtonRight")[1].disabled = true;
-            document.getElementById("projectPortrait").classList.add("slideablerout")
-            setTimeout(() => {
-                document.getElementById("projectPortrait").classList.remove("slideablerout")
-                document.getElementById("projectPortrait").classList.remove("slideablel")
-                this.setState({ID: 0})
-                document.getElementById("projectPortrait").classList.add("slideabler")
-                },400);
-        }
-        else{
-            document.getElementsByClassName("displayButtonRight")[1].disabled = true;
-            document.getElementById("projectPortrait").classList.add("slideablerout")
-            setTimeout(() => {
-                document.getElementById("projectPortrait").classList.remove("slideablerout")
-                document.getElementById("projectPortrait").classList.remove("slideablel")
-                this.setState({ID: this.state.ID+1})
-                document.getElementById("projectPortrait").classList.add("slideabler")
-                },400);
-        }
-        setTimeout(() => {
-        document.getElementsByClassName("displayButtonRight")[1].disabled = false;
-        },700);
+        this.slideTo("right", this.state.projectID)
     }
 
     render(){
@@ -83,7 +76,7 @@ class ProjectBanner extends Component{
                     <button className= "displayButtonLeft btn btn-secondary btn-lg" onClick = {this.scrollLeft}>&#8249;</button>
                     <button className= "displayButtonRight btn btn-secondary btn-lg" onClick = {this.scrollRight}>&#8250;</button>
                     <div id = "projectPortrait">
-                            <Project projects={PROJECTS[this.state.ID]}/>
+                            <Project projects={PROJECTS[this.state.projectID]}/>
                     </div>
                 </div>
             </div>
