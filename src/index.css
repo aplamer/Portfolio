@@ -144,7 +144,7 @@
 }
 
 
-@media screen and (max-width: 1100px){
+@media screen and (max-width: 1500px){
     .displayContainers{
         position: relative;
         text-align: center;
@@ -163,7 +163,7 @@
     padding-top: 10px;
 }
 
-@media screen and (min-width: 1300px){
+@media screen and (min-width: 1700px){
     .displayImage{
         height:600px;
         white-space: nowrap;
@@ -173,7 +173,17 @@
     }
 }
 
-@media screen and (max-width: 1300px){
+@media screen and (min-width: 1500px) and (max-width: 1700px){
+    .displayImage{
+        height:500px;
+        white-space: nowrap;
+        overflow: hidden;
+        position: relative;
+        
+    }
+}
+
+@media screen and (max-width: 1500px){
     .displayImage{
         height: 200px;
         overflow: hidden;
@@ -182,7 +192,7 @@
     }
 }
 
-@media screen and (min-width: 1600px){
+@media screen and (min-width: 1700px){
     .displayDescription{
         text-align: center;
         white-space: nowrap;
@@ -192,7 +202,7 @@
     }
 }
 
-@media screen and (max-width: 1600px){
+@media screen and (max-width: 1700px){
     .displayDescription{
         text-align: center;
         white-space: normal;
@@ -245,6 +255,12 @@
         margin-left: 200%;
     }
 }
+
+.lazy-img {
+    filter: blur(20px);
+  }
+
+  
 /* 
 @keyframes fadein{
     from{
