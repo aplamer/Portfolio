@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 import ART from "../data/art";
-const Art = props => {
-    const {title, lazyImage, image, description} = props.art;
 
+const Art = (props) => {
     return (
         <div>
-            <h1 className = "displayName">{title}</h1>
-            <img id = "artImage" className = "displayImage lazy-img" src = {lazyImage} data-src = {image} alt = 'Image not found.'/>
-            <p className = "displayDescription">{description}</p>
+            <h1 className = "displayName">{props.art.title}</h1>
+            <img id = "artImage" className = "displayImage lazy-img" src = {props.art.lazyImage} data-src = {props.art.image} alt = 'not found.'/>
+            <p id = "artDescription" className = "displayDescription">{props.art.description}</p>
         </div>
     )
     
@@ -47,14 +46,15 @@ class ArtBanner extends Component{
             clearClass = "slideableLIn";
             slideIn = "slideableRIn";
         }
-    
+        
         document.getElementById(targetedButton).setAttribute("disabled", "disabled");
         const portrait = document.getElementById('portrait');
-        
         portrait.classList.add(slideOut);
+        
         setTimeout(() => {
             
             
+            document.getElementById('artDescription').style.whiteSpace = "nowrap";
             portrait.classList.remove(slideOut);
             portrait.classList.remove(clearClass);
 
@@ -80,10 +80,12 @@ class ArtBanner extends Component{
         }, 500);
 
         setTimeout(() => {
-        
-            
             document.getElementById(targetedButton).removeAttribute("disabled");
             },700);
+
+        setTimeout(() => {
+            document.getElementById('artDescription').style.whiteSpace = "normal";
+        },900);
     }
 
     scrollLeft(){

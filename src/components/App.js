@@ -9,13 +9,13 @@ const App = () =>(
                     <p className = "homeText">
                         Hi there, my name is Alan Peter Lam. I'm a computer scientist born and raised in New York City.
                         <br></br>
-                        Though I have many interests such as art, writing, and videogame design, my goals right now lie solely on making a career in web developement.
+                        Though I have many interests such as art, writing, and videogame design, my goals right now lie solely on making a career in web development.
                         <br></br>
                         I'm motivated, passionate and am open to learning new things in order to further my career.
                         <br></br>
                         If you want to know more about me or my work check out some of my projects down below!
                         <br></br>
-                        And if you want to contact me for an oppurtunity I am more than happy to answer back! Just shoot me an email at <a href= "mailto:aplamer11307@gmail.com">aplamer11307@gmail.com!</a>
+                        And if you want to contact me for an opportunity I am more than happy to answer back! Just shoot me an email at <a href= "mailto:aplamer11307@gmail.com">aplamer11307@gmail.com!</a>
                     </p>
                 </div>
 

@@ -1,6 +1,8 @@
 import image1 from "../assets/React.png"
 import image2 from "../assets/FrontEnd.png"
 import image3 from "../assets/Angular.png"
+import image4 from "../assets/JS.png"
+
 const ONLINECLASSES = [
     {
         id: 0,
@@ -19,6 +21,12 @@ const ONLINECLASSES = [
         title: "Angular – The Complete Guide (2020 Edition)",
         link: "https://www.udemy.com/course/the-complete-guide-to-angular-2/", 
         image: image3
+    },
+    {
+        id: 3,
+        title: "The Complete Javascript Course 2020:From Zero to Expert!",
+        link: "https://www.udemy.com/course/the-complete-javascript-course/", 
+        image: image4
     }
 ]
 export default ONLINECLASSES;

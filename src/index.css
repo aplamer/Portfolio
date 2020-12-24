@@ -90,7 +90,7 @@
 
 /* Used throughout the entire website */
 .home{
-    border-top: 4px solid black;
+    border-top: 6px solid black;
     padding-top: 10px;
     padding-bottom: 10px;
     background: #1f1f23;
@@ -192,25 +192,13 @@
     }
 }
 
-@media screen and (min-width: 1700px){
-    .displayDescription{
-        text-align: center;
-        white-space: nowrap;
-        overflow: hidden;
-        color: white;
-        padding-top: 5px;
-    }
+.displayDescription{
+    text-align: center;
+    overflow: hidden;
+    color: white;
+    padding-top: 5px;
 }
 
-@media screen and (max-width: 1700px){
-    .displayDescription{
-        text-align: center;
-        white-space: normal;
-        overflow: hidden;
-        color: white;
-        padding-top: 5px;
-    }
-}
 
 .slideableRIn{
     animation-duration: .5s;

@@ -4,34 +4,31 @@ import collegeImage2 from "../assets/collegeImage2.png";
 import OFFLINECLASSES from "../data/classes";
 import ONLINECLASSES from "../data/onlineclasses";
 import SKILLS from "../data/skills";
-const OfflineClass = props =>{
-    const {title} = props.offlineclass;
+const OfflineClass = (props) =>{
 
     return (
         <div>
-            <h5>{title}</h5>
+            <h5>{props.offlineclass.title}</h5>
         </div>
     )
 }
 
-const OnlineClass = props =>{
-    const {title, image, link} = props.onlineclass;
+const OnlineClass = (props) =>{
 
     return (
         <div className = "educationOther">
-            <h5>{title}</h5>
-            <a href = {link}><img alt = '' src = {image} style = {{height: "160px"}}/></a>
+            <h5>{props.onlineclass.title}</h5>
+            <a href = {props.onlineclass.link}><img alt = '' src = {props.onlineclass.image} style = {{height: "160px"}}/></a>
         </div>
     )
 }
 
-const Skill = props =>{
-    const {title, image} = props.skill;
+const Skill = (props) =>{
 
     return (
         <div className = "educationOther">
-            <h5>{title}</h5>
-            <img alt = '' src = {image} style = {{height: "120px"}}/>
+            <h5>{props.skill.title}</h5>
+            <img alt = '' src = {props.skill.image} style = {{height: "120px"}}/>
         </div>
     )
 }

@@ -35,7 +35,7 @@ const SKILLS = [
     },
     {
         id: 4,
-        title: "Angular 10",
+        title: "Angular 2",
         image: image5
     }, 
     {

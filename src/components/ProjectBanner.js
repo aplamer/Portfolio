@@ -1,15 +1,13 @@
 import React, { Component } from 'react';
 import PROJECTS from "../data/projects";
-const Project = props => {
-    const {title, lazyImage, image, description, link} = props.projects;
-
+const Project = (props) => {
     return (
         <div>
-            <h1 className = "displayName">{title}</h1>
-            <img id = "projectImage" className = "displayImage lazy-img" src={lazyImage} data-src = {image} alt = 'profile'/>
-            <p className = "displayDescription">{description}
+            <h1 className = "displayName">{props.projects.title}</h1>
+            <img id = "projectImage" className = "displayImage lazy-img" src={props.projects.lazyImage} data-src = {props.projects.image} alt = 'profile'/>
+            <p id = "projectDescription" className = "displayDescription">{props.projects.description}
             <br></br>
-            <a href = {link}>{link}</a>
+            <a href = {props.projects.link}>{props.projects.link}</a>
             </p>
         </div>
     )
@@ -55,6 +53,8 @@ class ProjectBanner extends Component{
         portrait.classList.add(slideOut);
 
         setTimeout(() => {
+            
+            document.getElementById('projectDescription').style.whiteSpace = "nowrap";
             portrait.classList.remove(slideOut);
             portrait.classList.remove(clearClass);
             if(direction === "left"){
@@ -81,6 +81,10 @@ class ProjectBanner extends Component{
         setTimeout(() => {
             document.getElementById(targetedButton).removeAttribute("disabled");
             },700);
+
+        setTimeout(() => {
+            document.getElementById('projectDescription').style.whiteSpace = "normal";
+        },900);
     }
 
     scrollLeft(){

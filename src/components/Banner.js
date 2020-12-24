@@ -3,8 +3,7 @@ import profile from '../assets/profile.png';
 import background from '../assets/nyc.png';
 import "../index.css"
 
-class Banner extends Component{
-    render(){
+const Banner = () => {
         return(
             <div>
                 <img src = {background} alt = "background" id = "background"/>
@@ -15,7 +14,6 @@ class Banner extends Component{
                 
             </div>
         )
-    }
 }
 
 export default Banner;
