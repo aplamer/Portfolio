@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b963c06e2ac298206dbf365b6678655b",
+    "revision": "11eb2953fb49b9314822be45191d0ac8",
     "url": "/Portfolio/index.html"
   },
   {
-    "revision": "f879e56250b0e52ba6c2",
-    "url": "/Portfolio/static/css/main.f78f39dc.chunk.css"
+    "revision": "1b2b72b45bf161e40d74",
+    "url": "/Portfolio/static/css/main.f435796f.chunk.css"
   },
   {
-    "revision": "36326da6f63ed4874e31",
-    "url": "/Portfolio/static/js/2.7e8c2831.chunk.js"
+    "revision": "8daabf5c6250bec68449",
+    "url": "/Portfolio/static/js/2.a18dedf4.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/Portfolio/static/js/2.7e8c2831.chunk.js.LICENSE.txt"
+    "url": "/Portfolio/static/js/2.a18dedf4.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f879e56250b0e52ba6c2",
-    "url": "/Portfolio/static/js/main.80aceddd.chunk.js"
+    "revision": "1b2b72b45bf161e40d74",
+    "url": "/Portfolio/static/js/main.771d1ccc.chunk.js"
   },
   {
     "revision": "b83a37198ba343383876",
@@ -44,12 +44,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Portfolio/static/media/CSP.0218745a.png"
   },
   {
-    "revision": "d37b854da33203859f3606ac9661628c",
-    "url": "/Portfolio/static/media/ColorTheory.d37b854d.PNG"
+    "revision": "8f5d2051e3645dd00f5aefb4ca087eaa",
+    "url": "/Portfolio/static/media/ColorTheory.8f5d2051.PNG"
   },
   {
     "revision": "fa8c91ebe5a902359a99805d3ea9f85c",
     "url": "/Portfolio/static/media/FrontEnd.fa8c91eb.png"
+  },
+  {
+    "revision": "373acbed3da24bcfcb195287ad41403b",
+    "url": "/Portfolio/static/media/JS.373acbed.png"
   },
   {
     "revision": "49525ecc93d05c05e830b2f8dd535665",
@@ -68,8 +72,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Portfolio/static/media/Portfolio.6fd9ced4.PNG"
   },
   {
-    "revision": "d62f890ae83352154a4149babca082fa",
-    "url": "/Portfolio/static/media/Propaganda.d62f890a.png"
+    "revision": "7b1fa91deedb7261cc61e4eeb6f8f1f3",
+    "url": "/Portfolio/static/media/Propaganda.7b1fa91d.png"
   },
   {
     "revision": "864eca6e39f6e57e0b0266e43b5ca4cf",
