@@ -1,8 +1,8 @@
 import React from "react";
-import Banner from "./Banner";
 
 const Projects = () => (
-    <div>
+    <div style = {{color: "white", textAlign: "center", paddingTop: "20px"}}>
+        Tab is currently under construction, check back later when it's done!.
     </div>
 )
 

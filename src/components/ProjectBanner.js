@@ -58,10 +58,10 @@ class ProjectBanner extends Component{
             portrait.classList.remove(slideOut);
             portrait.classList.remove(clearClass);
             if(direction === "left"){
-                ID === 0 ? this.setState({projectID: 1}) : this.setState({projectID: this.state.projectID-1});
+                ID === 0 ? this.setState({projectID: 2}) : this.setState({projectID: this.state.projectID-1});
             }
             else{
-                ID === 1 ? this.setState({projectID: 0}) : this.setState({projectID: this.state.projectID+1});
+                ID === 2 ? this.setState({projectID: 0}) : this.setState({projectID: this.state.projectID+1});
             }
 
             portrait.classList.add(slideIn);

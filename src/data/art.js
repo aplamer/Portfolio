@@ -2,13 +2,13 @@ import art1 from "../assets/Artificer.png"
 import art2 from "../assets/Propaganda.png"
 import art3 from "../assets/Background+buttons.png"
 import art4 from "../assets/Knight.png"
-import art5 from "../assets/Rebel.png"
+import art5 from "../assets/city.png"
 
 import art1L from "../assets/ArtificerL.png"
 import art2L from "../assets/PropagandaL.png"
 import art3L from "../assets/Background+buttonsL.png"
 import art4L from "../assets/KnightL.png"
-import art5L from "../assets/RebelL.png"
+import art5L from "../assets/cityL.png"
 
 const ART = [
     {
@@ -41,11 +41,12 @@ const ART = [
     },
     {
         id: 4,
-        title: 'Rebel',
-        description: 'A more stylized drawing I made with a very simple background. The aim was to try and develop my perspective and exaggeration skills for future drawings.',
+        title: 'Purple city',
+        description: 'A city night digital painting, made to experiment with some color theory and environment design.',
         image: art5,
         lazyImage: art5L
-    }
+    },
+
 ];
 
 export default ART;
