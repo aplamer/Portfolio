@@ -3,6 +3,7 @@ import image2 from "../assets/FrontEnd.png"
 import image3 from "../assets/Angular.png"
 import image4 from "../assets/JS.png"
 import image5 from '../assets/ReactCourse2.jpg'
+import image6 from "../assets/jQuery.jpg"
 const ONLINECLASSES = [
     {
         id: 0,
@@ -34,5 +35,11 @@ const ONLINECLASSES = [
         link: "https://www.udemy.com/course/react-the-complete-guide-incl-redux/", 
         image: image5
     },
+    {
+        id: 5,
+        title: "The Complete jQuery Course: From Beginner To Advanced!",
+        link: "https://www.udemy.com/course/jquery-tutorial/",
+        image: image6
+    }
 ]
 export default ONLINECLASSES;

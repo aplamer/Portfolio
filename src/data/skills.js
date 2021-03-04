@@ -11,7 +11,7 @@ import image10 from "../assets/Python.png";
 import image11 from "../assets/C++.png";
 import image12 from "../assets/SQL.png";
 import image13 from "../assets/CSP.png";
-
+import image14 from "../assets/Redux.png";
 const SKILLS = [
     {
         id: 0,
@@ -77,6 +77,11 @@ const SKILLS = [
         id: 12,
         title: "CLIP STUDIO PAINT",
         image: image13
+    },
+    {
+        id: 13,
+        title: "Redux",
+        image: image14
     },
 ]
 export default SKILLS;
